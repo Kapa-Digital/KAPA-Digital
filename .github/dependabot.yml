@@ -1,0 +1,9 @@
+# SEC-03: Repository ohne npm-Paketbestand.
+# Woechentliche Pruefung von GitHub-Actions-Abhaengigkeiten; kein Auto-Merge.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 2
